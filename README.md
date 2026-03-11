@@ -19,7 +19,7 @@ The project follows a layered **modern data warehouse architecture**.
 
 Raw Data → Data Cleaning → Analytics Modeling → Dashboard
 
-![Architecture](Img/Workflow.jpg)
+![Architecture](Docs/Img/Workflow.jpg)
 
 ### Architecture Layers
 
@@ -43,6 +43,15 @@ Raw Data → Data Cleaning → Analytics Modeling → Dashboard
 - Dashboard data source
 
 ---
+
+# Data Model (ER Diagram)
+
+The following Entity Relationship Diagram represents the logical structure of the data warehouse, including relationships between entities such as customers, restaurants, orders, and delivery agents.
+
+<p align="center">
+  <img src="Docs/ERdiagram.svg" width="100%">
+</p>
+
 
 # Data Warehouse Modeling
 
@@ -69,7 +78,9 @@ Key measures include:
 
 - `MENU_DIM`
 - `CUSTOMER_DIM`
+- `RESTAURANT_DIM`
 - `RESTAURANT_LOCATION_DIM`
+- `CUSTOMER_DIM`
 - `CUSTOMER_ADDRESS_DIM`
 - `DELIVERY_AGENT_DIM`
 - `DATE_DIM`
@@ -84,7 +95,7 @@ The diagram below shows how data flows across the warehouse layers.
 
 Raw Tables → Clean Tables → Dimension Tables → Fact Table → KPI Views
 
-![Data Lineage](Img/Order_fact_data_lineage.png)
+![Data Lineage](Docs/Img/Order_fact_data_lineage.png)
 
 Example pipeline flow:
 CSV_STG
@@ -115,13 +126,13 @@ The dashboard provides business users with key revenue insights across different
 ## Dashboard Preview
 
 <p align="center">
-  <img src="Img/dashboard 2023-1.png" width="45%">
-  <img src="Img/dashboard 2023-2.png" width="45%">
+  <img src="Docs/Img/dashboard 2023-1.png" width="45%">
+  <img src="Docs/Img/dashboard 2023-2.png" width="45%">
 </p>
 
 <p align="center">
-  <img src="Img/dashboard 2024-1.png" width="45%">
-  <img src="Img/dashboard 2024-2.jpg" width="45%">
+  <img src="Docs/Img/dashboard 2024-1.png" width="45%">
+  <img src="Docs/Img/dashboard 2024-2.png" width="45%">
 </p>
 
 Metrics displayed:
@@ -189,6 +200,8 @@ These insights support **data-driven decision making for business operations and
 
 ---
 
+
+
 ## Project Structure
 
 ```text
@@ -248,16 +261,3 @@ This project demonstrates core skills in:
 - KPI monitoring
 - Business insights presentation
 
----
-
-# Author
-
-**Rishav Sagar**
-
-Data Engineering | Analytics | Machine Learning
-
----
-
-# License
-
-This project is licensed under the MIT License.
